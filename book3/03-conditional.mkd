@@ -4,12 +4,12 @@
 布尔表达式
 -------------------
 
-\index{布尔表达式}
-\index{expression!boolean}
-\index{logical operator}
-\index{operator!logical}
+\索引{布尔表达式}
+\索引{表达式!布尔}
+\索引{逻辑运算符}
+\索引{运算符!逻辑}
 
-*布尔表达式* 的值要么为真要么为假。下面的例子中，我们通过运算符 `==`来比较两个运算对象，如果二者相同，则返回 `真` ，否则返回 `假`:
+*布尔表达式* 是表达式的一种，其值要么为真（True），要么为假（False）。下面的例子中，我们通过相等运算符 `==`来比较两个运算对象，如果二者相等，则返回 `True` ，否则返回 `False`:
 
 ~~~~ {.python .trinket}
 >>> 5 == 5
@@ -19,15 +19,14 @@ False
 {}
 ~~~~
 
-`True` and `False` are special values that belong
-to the class `bool`; they are not strings:
+`True` and `False` 是一种特殊的值，属于 `布尔`类型; 他们不是字符串:
 
-\index{True special value}
-\index{False special value}
-\index{special value!True}
-\index{special value!False}
-\index{bool type}
-\index{type!bool}
+\索引{特殊值真}
+\索引{特殊值假}
+\索引{特殊值!真}
+\索引{特殊值!假}
+\索引{布尔类型}
+\索引{类型!布尔}
 
 ~~~~ {.python}
 >>> type(True)
@@ -36,50 +35,38 @@ to the class `bool`; they are not strings:
 <class 'bool'>
 ~~~~
 
-The `==` operator is one of the *comparison
-operators*; the others are:
+相等运算符 `==` 是 *比较运算符*; 其他的比较运算符包括:
 
 ~~~~ {.python}
-x != y               # x is not equal to y
-x > y                # x is greater than y
-x < y                # x is less than y
-x >= y               # x is greater than or equal to y
-x <= y               # x is less than or equal to y
-x is y               # x is the same as y
-x is not y           # x is not the same as y
+x != y               # x不等于y
+x > y                # x大于y
+x < y                # x小于y
+x >= y               # x大于或等于y
+x <= y               # x小于或等于y
+x is y               # x与y相同
+x is not y           # x与y不相同
 ~~~~
 
-Although these operations are probably familiar to you, the Python
-symbols are different from the mathematical symbols for the same
-operations. A common error is to use a single equal sign
-(`=`) instead of a double equal sign (`==`).
-Remember that `=` is an assignment operator and
-`==` is a comparison operator. There is no such thing as
-`=<` or `=>`.
+你可能觉得这些运算符比较眼熟，但要注意Python符号与数学符号有所不同。一个常见的错误是应该用双等号(`==`)时却用了单等号(`=`)。请记住：单等号`=`是赋值运算符，而双等号`==`是比较运算符。另外，不存在`=<`或`=>`这样的运算符。
 
-\index{comparison operator}
-\index{operator!comparison}
+\索引{比较运算符}
+\索引{运算符!比较}
 
-Logical operators
+逻辑运算符
 -----------------
 
-\index{logical operator}
-\index{operator!logical}
+\索引{逻辑运算符}
+\索引{运算符!逻辑}
 
-There are three *logical operators*: `and`,
-`or`, and `not`. The semantics (meaning) of these
-operators is similar to their meaning in English. For example,
+*逻辑运算符*共有3个: `与 and`,`或 or`,以及 `非 not`. 它们的语义和英文含义很相似。比如，只有 `x` 大于 0 *与* 小于10同时成立时，
+`x > 0 and x < 10`的值才为真True。
 
-`x > 0 and x < 10`
-
-is true only if `x` is greater than 0 *and* less than 10.
-
-\index{and operator}
-\index{or operator}
-\index{not operator}
-\index{operator!and}
-\index{operator!or}
-\index{operator!not}
+\索引{与 运算符}
+\索引{或 运算符}
+\索引{非 运算符}
+\索引{运算符!与}
+\索引{运算符!或}
+\索引{运算符!非}
 
 `n%2 == 0 or n%3 == 0` is true if *either* of the conditions
 is true, that is, if the number is divisible by 2 *or* 3.
