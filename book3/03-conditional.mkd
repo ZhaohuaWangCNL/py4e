@@ -1,18 +1,15 @@
-Conditional execution
+条件执行
 =====================
 
-Boolean expressions
+布尔表达式
 -------------------
 
-\index{boolean expression}
+\index{布尔表达式}
 \index{expression!boolean}
 \index{logical operator}
 \index{operator!logical}
 
-A *boolean expression* is an expression that is either
-true or false. The following examples use the operator `==`,
-which compares two operands and produces `True` if they are
-equal and `False` otherwise:
+*布尔表达式* 的值要么为真要么为假。下面的例子中，我们通过运算符 `==`来比较两个运算对象，如果二者相同，则返回 `真` ，否则返回 `假`:
 
 ~~~~ {.python .trinket}
 >>> 5 == 5
